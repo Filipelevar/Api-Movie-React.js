@@ -6,8 +6,10 @@ font-family: "League Spartan", sans-serif;
 }
 
 body{
-  background-color: black;
+  background-image: url(https://www.10wallpaper.com/wallpaper/3840x2400/1808/Red_rays_glare_abstract_black_background_3840x2400.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 2rem;
 }
-
