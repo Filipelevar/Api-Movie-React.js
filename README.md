@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+Passos tomados
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+1 - Realizei os ajustes de pastas e organizações para que fique tudo mais clean possivel
+2 - Instalei a biblioteca styled-components
+3 - Com tudo instalado e configurado, iniciei a estilização da pagina e preparação de constantes no style.js
+4 - Com o style.js feito, realizei algumas funçoes e montei um MAP no index.js
+5 - Criei uma pasta de key.js para importar quando necessario minha key acess
+6 - Apos importar todos os componetes e variaveis fiz a chamada da API e setando ele para que converse com o MAP criado anteriormente.
+7 - Criei uma constante para pegar a url da imagem que a API fornece
+8 - Ajsutei a img src com minha const que criei e para que consiga fornecer as imagens certas que a API envia
+9 - Agora para lidar com as rotas preciso instalar react router para que consiga informaçoes especificas de cada filme 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Saindo da pasta pages, vamos para index.js para mexer com as rotas 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+10 - Npm install react-router-dom@6
+11 - importei BrowserRouter, Routes, Route e criei as Rotas
+12 - Criei uma pasta Details, importei o useParams e criei a função com uma const id para cada id de filme
+13 - Criei mais um state para consumir novamente a API para que eu possa puxar dessa vez informaçoes da sinospe do filme porem dessa vez com uma mudança no link para o ID e localizar o id do filme
+14 - setei os dados que a const do ID tinha que pegar na API
+15 - importei o Link e container
+16 - Finalizei com algumas alterações no style.js da pasta details 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
